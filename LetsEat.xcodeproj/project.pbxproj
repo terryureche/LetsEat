@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		D294D8DD25080DED00119B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294D8DC25080DED00119B5A /* AppDelegate.swift */; };
 		D294D8DF25080DED00119B5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294D8DE25080DED00119B5A /* SceneDelegate.swift */; };
-		D294D8E125080DED00119B5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294D8E025080DED00119B5A /* ViewController.swift */; };
 		D294D8E425080DED00119B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D294D8E225080DED00119B5A /* Main.storyboard */; };
-		D294D8E625080DF200119B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D294D8E525080DF200119B5A /* Assets.xcassets */; };
 		D294D8E925080DF200119B5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D294D8E725080DF200119B5A /* LaunchScreen.storyboard */; };
 		D294D8F425080DF300119B5A /* LetsEatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294D8F325080DF300119B5A /* LetsEatTests.swift */; };
 		D294D8FF25080DF300119B5A /* LetsEatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294D8FE25080DF300119B5A /* LetsEatUITests.swift */; };
+		D294D90D2508134200119B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D294D90C2508134200119B5A /* Assets.xcassets */; };
+		D294D9102508191000119B5A /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294D90F2508191000119B5A /* ExploreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +38,7 @@
 		D294D8D925080DED00119B5A /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D294D8DC25080DED00119B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D294D8DE25080DED00119B5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D294D8E025080DED00119B5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D294D8E325080DED00119B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D294D8E525080DF200119B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D294D8E825080DF200119B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D294D8EA25080DF200119B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D294D8EF25080DF300119B5A /* LetsEatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsEatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +47,8 @@
 		D294D8FA25080DF300119B5A /* LetsEatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsEatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D294D8FE25080DF300119B5A /* LetsEatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsEatUITests.swift; sourceTree = "<group>"; };
 		D294D90025080DF300119B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D294D90C2508134200119B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D294D90F2508191000119B5A /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +99,11 @@
 		D294D8DB25080DED00119B5A /* LetsEat */ = {
 			isa = PBXGroup;
 			children = (
+				D294D90E250818C100119B5A /* Explore */,
 				D294D8DC25080DED00119B5A /* AppDelegate.swift */,
 				D294D8DE25080DED00119B5A /* SceneDelegate.swift */,
-				D294D8E025080DED00119B5A /* ViewController.swift */,
 				D294D8E225080DED00119B5A /* Main.storyboard */,
-				D294D8E525080DF200119B5A /* Assets.xcassets */,
+				D294D90C2508134200119B5A /* Assets.xcassets */,
 				D294D8E725080DF200119B5A /* LaunchScreen.storyboard */,
 				D294D8EA25080DF200119B5A /* Info.plist */,
 			);
@@ -126,6 +126,14 @@
 				D294D90025080DF300119B5A /* Info.plist */,
 			);
 			path = LetsEatUITests;
+			sourceTree = "<group>";
+		};
+		D294D90E250818C100119B5A /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				D294D90F2508191000119B5A /* ExploreViewController.swift */,
+			);
+			path = Explore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D294D8E925080DF200119B5A /* LaunchScreen.storyboard in Resources */,
-				D294D8E625080DF200119B5A /* Assets.xcassets in Resources */,
+				D294D90D2508134200119B5A /* Assets.xcassets in Resources */,
 				D294D8E425080DED00119B5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,9 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D294D8E125080DED00119B5A /* ViewController.swift in Sources */,
 				D294D8DD25080DED00119B5A /* AppDelegate.swift in Sources */,
 				D294D8DF25080DED00119B5A /* SceneDelegate.swift in Sources */,
+				D294D9102508191000119B5A /* ExploreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JZH93WBYK8;
 				INFOPLIST_FILE = LetsEat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JZH93WBYK8;
 				INFOPLIST_FILE = LetsEat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
